@@ -7,89 +7,95 @@
   <link rel="stylesheet" href="assets/stylesheet/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Akronim&family=Bebas+Neue&family=Stick+No+Bills:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
-    <div class="container">
-      <a href="#" class="name">
-        <strong>Sumit Chahar</strong>
-      </a>
+    <div class="container grid">
+      <a href="#" class="brand-name">Sumit <span>Chahar</span></a>
+      <input type="checkbox" name="toggle" id="toggle">
+      <label for="toggle">
+        <i class="fas fa-bars"></i>
+      </label>
+      <nav class="nav">
+        <ul class="nav-menu"> 
+          <li class="nav-menu-item"><a href="#" class="nav-link">blog</a></li>
+          <li class="nav-menu-item"><a href="#" class="nav-link">projects</a></li>
+          <li class="nav-menu-item"><button class="btn"><a href="#" class="nav-link">download cv</a></button></li>
+        </ul>
+      </nav>
     </div>
   </header>
   <main>
     <section class="hero">
-      <div class="container flex-md">
-        <div class="intro wd-md-48">
-          <h1 class="hero-heading text-lg">Hey ! <br>I'm Sumit</h1>
-          <p class="text-sm semi-bold">I'm a Computer Science graduate</p>
-          <p class="text-sm semi-bold">Now learning Full Stack Development with <strong>MERN </strong>Stack!</p>
+      <div class="container grid">
+        <div class="hero-image-container">
+          <img src="./assets/media/my-phot.png" alt="my image">
         </div>
-        <img src="assets/media/Screenshot from 2019-04-11 23-01-55.png" alt="title image" class="hero-image wd-md-48">
+        <div class="hero-tagline-container">
+          <h1><strong>Hi There!<span>👋</span></strong></h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, eos asperiores? Voluptate blanditiis autem asperiores illo earum ut maiores deserunt rem! Corporis, nobis! Ex deleniti maxime sunt commodi? Id, eaque.</p>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container grid">
+        <div class="about-content">
+          <h2><strong>About Me</strong></h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit sit sequi distinctio officia provident. Dolore, quis blanditiis neque quas incidunt architecto assumenda unde numquam dicta libero voluptates iure animi mollitia itaque dolores aspernatur aperiam veniam, inventore totam! Soluta, amet? Ipsam similique perferendis laudantium quis cupiditate sit enim vel vero quisquam.</p>
+        </div>
+        <div class="proficiencies">
+          <h2><strong>My Proficiencies</strong></h2>
+          <ul class="portfolio-menu">
+            <li class="portfolio-item">HTML</li>
+            <li class="portfolio-item">JAVASCRIPT</li>
+            <li class="portfolio-item">BOOTSTRAP</li>
+            <li class="portfolio-item">SASS/SCSS</li>
+            <li class="portfolio-item">CSS</li>
+            <li class="portfolio-item">NODE.JS</li>
+            <li class="portfolio-item">REACTJS</li>
+            <li class="portfolio-item">MONGODB</li>
+            <li class="portfolio-item">API</li>
+            <li class="portfolio-item">EXPRESS.JS</li>
+            <li class="portfolio-item">Authorisation & Authentication</li>
+            <li class="portfolio-item">C</li>
+            <li class="portfolio-item">C++</li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="social">
-      <h2 class="text-md social-header">Connect with me <i class="fas fa-link"></i></h2>
-      <div class="container flex-sm">
-        <div class="wd-sm-48 wd-md-60 social-image-container">
-          <img src="assets/media/attract-users.svg" alt="social image" class="social-image">
-        </div>
-        <div class="social-menu flex-sm wd-sm-48">
-          <a href="https://github.com/chaharsumit" target="blank" class="wd-sm-48 wd-md-35"><i class="fab fa-github social-icon"></i></a>
-          <a href="https://twitter.com/sumit_s_chahar" class="wd-sm-48 wd-md-35" target="blank"><i class="fab fa-twitter social-icon"></i></a>
-          <a href="#" class="wd-sm-48 wd-md-35"><i class="fab fa-linkedin-in social-icon"></i></a>
-          <a href="https://dev.to/chaharsumit" class="wd-sm-48 wd-md-35" target="blank"><i class="fab fa-dev social-icon"></i></a>
+      <div class="container">
+        <h3><strong>Want to get in touch with me? <i class="fas fa-link"></i></strong></h3>
+        <div class="contact-info grid">
+          <div class="social-menu-container">
+            <ul class="social-menu grid">
+              <li class="social-menu-item"><a href="#" class="social-link"><i class="fab fa-github"></i></a></li>
+              <li class="social-menu-item"><a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a></li>
+              <li class="social-menu-item"><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+              <li class="social-menu-item"><a href="#" class="social-link"><i class="fab fa-dev"></i></a></li>
+            </ul>
+          </div>
+          <form action="post" class="grid">
+            <label for="name">Name</label>
+            <input type="name" name="name" id="name" class="form-control" placeholder="Your Name">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Your Email">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" placeholder="Your Message..." class="form-control"></textarea>
+            <button class="btn"><a href="#">Submit</a></button>
+          </form>
         </div>
       </div>
-    </section>
-    <section class="blog">
-      <h2 class="text-md social-header">Blogs</h2>
-      <div class="container flex-lg">
-        <article class="blog-card wd-lg-48">
-          <h3 class="blog-heading text-md">
-            Unix, Git & GitHub
-          </h3>
-          <p class="blog-description text-sm">
-            Learn the basics of Unix operating system and how the Git & GitHub's workflow make software development easier.
-          </p>
-          <div class="info flex-sm">
-            <time>08 August 2021</time>
-            <a href="https://hashnode.com/post/introduction-to-unix-git-and-github-cks2zvsx50svlees1f3caduel" target="blank" class="article-link">Read</a>
-          </div>
-        </article>
-        <article class="blog-card wd-lg-48">
-          <h3 class="blog-heading text-md">
-            Brief Introduction to HTML & CSS
-          </h3>
-          <p class="blog-description text-sm">
-            An introduction to what HTML & CSS are and how they work together to bring web page to life.
-          </p>
-          <div class="info flex-sm">
-            <time>22 August 2021</time>
-            <a href="https://dev.to/chaharsumit/a-brief-introduction-to-html-css-50p5" target="blank" class="article-link">Read</a>
-          </div>
-        </article>
-        <article class="blog-card wd-lg-48">
-          <h3 class="blog-heading text-md">
-            HTML Structure & Semantics
-            </h3>
-          <p class="blog-description text-sm">
-            Learn how HTML pages are structure and which Semantic element to use on your website keeping your code meaningful and easy to understand.
-          </p>
-          <div class="info flex-sm">
-            <time>27 August 2021</time>
-            <a href="https://dev.to/chaharsumit/html-page-strucuture-semantics-46k3" target="blank" class="article-link">Read</a>
-          </div>
-        </article>
-      </div>
-      <h5 class="blog-footer text-sm">More incoming...</h5>
     </section>
   </main>
   <footer class="footer">
-    <div class="footer-top flex-sm">
-      <small class="text-sm"><strong>Copyright &copy; | Sumit Chahar</strong></small>
-      <img src="assets/media/love.svg" alt="heart" class="footer-image">
+    <div class="container">
+      <small>Copyright &copy; 2021 | Sumit Chahar</small>
     </div>
   </footer>
 </body>

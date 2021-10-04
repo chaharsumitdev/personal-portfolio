@@ -1,0 +1,30 @@
+.hero{
+  background-color: $primary;
+  color: $secondary;
+  padding: 2rem 0;
+  .grid{
+    grid-template-columns: auto;
+  }
+  .hero-image-container{
+    width: 100%;
+  }
+  h1{
+    font-size: $text-xlg;
+  }
+  p{
+    font-size: $text-smd;
+  }
+  h1,p{
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 600px){
+  .hero{
+    .grid{
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      align-items: center;
+    }
+  }
+}

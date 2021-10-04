@@ -1,0 +1,34 @@
+.about{
+  .about-content, .proficiencies{
+    padding: 1rem 0;
+  }
+  .grid{
+    grid-template-columns: 1fr;
+  }
+  h2{
+    font-size: $text-lg;
+  }
+  p{
+    font-size: $text-smd;
+  }
+  .portfolio-menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    li{
+      border: 2px solid #CFD0DF;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      margin: 0 0.5rem 0 0;
+    }
+  }
+}
+
+@media (min-width: 600px){
+  .about{
+    .grid{
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+  }
+}
