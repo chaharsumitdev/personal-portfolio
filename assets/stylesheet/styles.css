@@ -397,4 +397,93 @@ footer {
   font-weight: 600;
   color: #9A9CA9;
 }
+
+.blogs {
+  padding: 2rem 0;
+}
+
+.blogs h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.blogs h2 {
+  font-size: 1.5rem;
+}
+
+.blogs p {
+  font-size: 0.8rem;
+}
+
+.blogs .blog-card-menu {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.blogs .blog-card-item {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid #1B1A1F;
+  background-color: #EFEFF0;
+}
+
+.blogs .blog-card-item a {
+  display: block;
+  color: #1B1A1F;
+}
+
+@media (min-width: 600px) {
+  .blog-card-item {
+    width: 80%;
+  }
+  .blog-card-menu .blog-card-item:nth-child(2n) {
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+}
+
+.project-card nav.project-navigation {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1rem;
+}
+
+.project-card nav.project-navigation button {
+  background-color: #1B1A1F;
+  color: #EFEFF0;
+}
+
+.project-card nav.project-navigation i {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 600px) {
+  .blogs .project-grid {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .project-card {
+    width: 100%;
+  }
+  .project-card div:first-child {
+    height: 250px;
+  }
+  .project-card div:first-child img {
+    height: 100%;
+  }
+  .project-card h2 {
+    font-size: 0.8rem;
+  }
+  .project-card p {
+    font-size: 0.6rem;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
