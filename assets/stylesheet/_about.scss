@@ -22,13 +22,19 @@
       margin: 0 0.5rem 0 0;
     }
   }
+  img{
+    filter: grayscale(100);
+  }
 }
 
 @media (min-width: 600px){
   .about{
     .grid{
-      grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
+    }
+    .about-content, .proficiency-grid{
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
     }
   }
 }

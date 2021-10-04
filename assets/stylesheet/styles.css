@@ -134,6 +134,7 @@ font-family: 'Stick No Bills', sans-serif;
   background-color: #EFEFF0;
   -webkit-box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.027);
           box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.027);
+  z-index: 1000;
 }
 
 .header .brand-name {
@@ -291,11 +292,21 @@ font-family: 'Stick No Bills', sans-serif;
   margin: 0 0.5rem 0 0;
 }
 
+.about img {
+  -webkit-filter: grayscale(100);
+          filter: grayscale(100);
+}
+
 @media (min-width: 600px) {
   .about .grid {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+  }
+  .about .about-content, .about .proficiency-grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -361,6 +372,22 @@ font-family: 'Stick No Bills', sans-serif;
 
 .social form .btn a {
   color: #ffffff;
+}
+
+.social img {
+  -webkit-filter: grayscale(100);
+          filter: grayscale(100);
+}
+
+@media (min-width: 600px) {
+  .contact-container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1rem;
+  }
 }
 
 footer {
