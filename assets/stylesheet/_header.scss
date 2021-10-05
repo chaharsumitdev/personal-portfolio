@@ -65,6 +65,12 @@
         justify-content: end;
         gap: 2rem;
       }
+      li{
+        transition: all 0.25s linear;
+        &:hover{
+          transform: scale(1.1, 1.1);
+        }
+      }
     }
     label{
       display: none;

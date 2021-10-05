@@ -2,6 +2,7 @@
   background-color: $primary;
   color: $secondary;
   padding: 2rem 0;
+  position: relative;
   .grid{
     grid-template-columns: auto;
   }
@@ -17,6 +18,21 @@
   h1,p{
     margin-top: 1rem;
   }
+  .wave{
+    animation: wave 0.5s 3;
+    position: absolute;
+  }
+}
+@keyframes wave{
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(30deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
 }
 
 @media (min-width: 600px){
@@ -25,6 +41,11 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 1rem;
       align-items: center;
+    }
+  }
+  .hero-tagline-container:hover{
+    .wave{
+      animation: wave 0.5s infinite;
     }
   }
 }
