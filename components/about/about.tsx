@@ -36,7 +36,7 @@ export default function About() {
                 <div className="w-full sm:max-w-[220px] md:max-w-[280px] flex flex-col items-center md:items-end order-3">
                     <div className="w-full sm:max-w-[220px] md:max-w-[280px] mb-6 md:mb-[250px]">
                         <Image
-                            src="/sumit.png"
+                            src="/sumit.PNG"
                             alt="About"
                             width={280}
                             height={672}
