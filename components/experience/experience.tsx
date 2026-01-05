@@ -1,20 +1,23 @@
 export default function Experience() {
     return (
-        <div className="w-full py-24 px-16">
-            <div className="bg-black rounded-2xl py-16 px-4">
-                <div className="px-16 text-white">
-                    <h1 className="text-5xl font-bold mb-10">Professional Experience</h1>
-                    <p className="text-2xl font-semibold mb-10">I help growing companies ship performance-critical web and mobile applications by owning systems end to end from frontend architecture and mobile UX to backend APIs, data flows, and infrastructure. This has meant building schedulers, CMS platforms, admin tools, and monetization features that directly impact growth and efficiency.</p>
+        <div className="w-full py-8 px-4 sm:py-12 sm:px-8 md:py-16 md:px-12 lg:py-24 lg:px-16 overflow-x-hidden">
+            <div className="bg-black rounded-2xl py-8 px-4 sm:py-12 sm:px-6 md:py-14 md:px-8 lg:py-16 lg:px-4">
+                <div className="px-4 sm:px-6 md:px-10 lg:px-16 text-white">
+                    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 md:mb-10">Professional Experience</h1>
+                    <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold mb-6 sm:mb-8 md:mb-10 break-words">I help growing companies ship performance-critical web and mobile applications by owning systems end to end from frontend architecture and mobile UX to backend APIs, data flows, and infrastructure. This has meant building schedulers, CMS platforms, admin tools, and monetization features that directly impact growth and efficiency.</p>
                 </div>
                 <ul className="text-white bg-[#262626] rounded-2xl">
-                    <li className="flex flex-col py-6 px-16">
-                        <div className="flex items-center mb-4">
-                            <h4 className="mb-2 text-2xl font-semibold">SOFTWARE ENGINEER AT Inspect Element HK<span className="text-lg ml-2">Hong Kong SAR (Remote)</span></h4>
-                            <p className="flex-1 text-right text-lg">Jun 2024 - Oct 2025</p>
+                    <li className="flex flex-col py-4 px-4 sm:py-5 sm:px-6 md:py-6 md:px-10 lg:py-6 lg:px-16">
+                        <div className="flex flex-col sm:flex-row sm:items-center mb-4 gap-2 sm:gap-0">
+                            <h4 className="mb-2 text-lg sm:text-xl md:text-2xl font-semibold break-words">
+                                SOFTWARE ENGINEER AT Inspect Element HK
+                                <span className="text-sm sm:text-base md:text-lg ml-0 sm:ml-2 block sm:inline">Hong Kong SAR (Remote)</span>
+                            </h4>
+                            <p className="sm:flex-1 sm:text-right text-base sm:text-lg whitespace-nowrap">Jun 2024 - Oct 2025</p>
                         </div>
                         <ul className="flex flex-col gap-4">
                             <li className="border-l-2 border-white pl-4">
-                                <p className="text-lg">
+                                <p className="text-sm sm:text-base md:text-lg break-words">
                                     Designed and developed the HKJC LevelMind platform using a custom Payload CMS, building
                                     reusable, schema-driven components and shared UI primitives while optimizing image delivery and
                                     bulk media uploads to support a content- and media-heavy website with high concurrent traffic and
@@ -22,7 +25,7 @@ export default function Experience() {
                                 </p>
                             </li>
                             <li className="border-l-2 border-white pl-4">
-                                <p className="text-lg">
+                                <p className="text-sm sm:text-base md:text-lg break-words">
                                     Contributed to the development of multiple e-commerce and fintech applications using React
                                     Native, working independently across the stack by owning end-to-end feature delivery from frontend
                                     implementation to backend integrations, ensuring scalable architecture, reliable data flows, and
@@ -30,7 +33,7 @@ export default function Experience() {
                                 </p>
                             </li>
                             <li className="border-l-2 border-white pl-4">
-                                <p className="text-lg">
+                                <p className="text-sm sm:text-base md:text-lg break-words">
                                     Designed and developed a scheduler and slot booking system for the GetClient platform, extending
                                     and contributing to a forked React calendar library by adding new features and fixing core limitations,
                                     including support for rendering multiple event tiles within a single time cell and dynamically
@@ -42,53 +45,59 @@ export default function Experience() {
                             </li>
                         </ul>
                     </li>
-                    <li className="flex flex-col py-6 px-16">
-                        <div className="flex items-center mb-4">
-                            <h4 className="mb-2 text-2xl font-semibold">SOFTWARE ENGINEER AT GRANTIT<span className="text-lg ml-2">Hong Kong SAR (Remote)</span></h4>
-                            <p className="flex-1 text-right text-lg">Feb 2023 - Jun 2024</p>
+                    <li className="flex flex-col py-4 px-4 sm:py-5 sm:px-6 md:py-6 md:px-10 lg:py-6 lg:px-16">
+                        <div className="flex flex-col sm:flex-row sm:items-center mb-4 gap-2 sm:gap-0">
+                            <h4 className="mb-2 text-lg sm:text-xl md:text-2xl font-semibold break-words">
+                                SOFTWARE ENGINEER AT GRANTIT
+                                <span className="text-sm sm:text-base md:text-lg ml-0 sm:ml-2 block sm:inline">Hong Kong SAR (Remote)</span>
+                            </h4>
+                            <p className="sm:flex-1 sm:text-right text-base sm:text-lg whitespace-nowrap">Feb 2023 - Jun 2024</p>
                         </div>
                         <ul className="flex flex-col gap-4">
                             <li className="border-l-2 border-white pl-4">
-                                <p className="text-lg">
+                                <p className="text-sm sm:text-base md:text-lg break-words">
                                     Contributed on Frontend and Backend development of a  custom CMS and admin panel tightly integrated with the mobile app, enabling real - time
                                     content updates and eliminating embedded web views, resulting in faster performance and a more
                                     native user experience.
                                 </p>
                             </li>
                             <li className="border-l-2 border-white pl-4">
-                                <p className="text-lg">
+                                <p className="text-sm sm:text-base md:text-lg break-words">
                                     Developed and shipped personalized deals and credit card mapping features for a financial mobile
                                     app, strengthening monetization and user engagement and contributing to more than 2× user base growth.
                                 </p>
                             </li>
                             <li className="border-l-2 border-white pl-4">
-                                <p className="text-lg">
+                                <p className="text-sm sm:text-base md:text-lg break-words">
                                     Actively participated in PR reviews across the mobile app, admin panel, and backend services to maintain consistent coding standards and architectural quality. Collaborated closely with engineers to suggest improvements around readability, performance, and long-term maintainability. Helped establish shared best practices that reduced regressions and improved overall code quality across the stack.
                                 </p>
                             </li>
                         </ul>
                     </li>
-                    <li className="flex flex-col py-6 px-16">
-                        <div className="flex items-center mb-4">
-                            <h4 className="mb-2 text-2xl font-semibold">JUNIOR SOFTWARE ENGINEER AT GRANTIT<span className="text-lg ml-2">Hong Kong SAR (Remote)</span></h4>
-                            <p className="flex-1 text-right text-lg">May 2022 - Jan 2023</p>
+                    <li className="flex flex-col py-4 px-4 sm:py-5 sm:px-6 md:py-6 md:px-10 lg:py-6 lg:px-16">
+                        <div className="flex flex-col sm:flex-row sm:items-center mb-4 gap-2 sm:gap-0">
+                            <h4 className="mb-2 text-lg sm:text-xl md:text-2xl font-semibold break-words">
+                                JUNIOR SOFTWARE ENGINEER AT GRANTIT
+                                <span className="text-sm sm:text-base md:text-lg ml-0 sm:ml-2 block sm:inline">Hong Kong SAR (Remote)</span>
+                            </h4>
+                            <p className="sm:flex-1 sm:text-right text-base sm:text-lg whitespace-nowrap">May 2022 - Jan 2023</p>
                         </div>
                         <ul className="flex flex-col gap-4">
                             <li className="border-l-2 border-white pl-4">
-                                <p className="text-lg">
+                                <p className="text-sm sm:text-base md:text-lg break-words">
                                     Designed and built a Permissions Management System across React UI and Node.js backend to enable
                                     scalable, self - serve operations for non - technical teams; streamlined loan request workflows and
                                     increased daily request handling capacity by more than 2 folds.
                                 </p>
                             </li>
                             <li className="border-l-2 border-white pl-4">
-                                <p className="text-lg">
+                                <p className="text-sm sm:text-base md:text-lg break-words">
                                     Contributed to Improvement in operations team efficiency through redesigned admin panel UI/UX for critical flows like cashin/cashout data forms, significantly reducing
                                     request processing time and friction for operations teams.
                                 </p>
                             </li>
                             <li className="border-l-2 border-white pl-4">
-                                <p className="text-lg">
+                                <p className="text-sm sm:text-base md:text-lg break-words">
                                     Refactored legacy React codebases to improve performance, consistency, and long - term
                                     maintainability; optimized admin panel load times by ~10 % and played a key role in a full
                                     authentication flow redesign aligned with mobile - first UX and performance best practices.
